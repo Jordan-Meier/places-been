@@ -1,6 +1,6 @@
-function Place(location, landmark, timeYear, notes) {
+function Place(location, landmarks, timeYear, notes) {
   this.location = location;
-  this.landmark = landmark;
+  this.landmarks = landmarks;
   this.timeYear = timeYear;
   this.notes = "";
 }
