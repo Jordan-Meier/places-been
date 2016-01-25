@@ -1,13 +1,9 @@
-describe('Contact', function () {
-  it("create a new contact with the given properties", function () {
-    var testContact = new Contact("Rita", "Moreno");
-    expect(testContact.firstName).to.equal("Rita");
-    expect(testContact.lastName).to.equal("Moreno");
-    expect(testContact.addresses).to.eql([]);
-  });
-
-  it("adds the fullName method to a contact", function () {
-    var testContact = new Contact("Sherlock", "Holmes");
-    expect(testContact.fullName()).to.equal("Sherlock Holmes");
+describe('Place', function () {
+  it("creates a new Place with the given properties", function () {
+    var testPlace = new Place("Florence", "Duomo", "Spring", "");
+    expect(testPlace.location).to.equal("Florence");
+    expect(testPlace.landmark).to.equal("Duomo");
+    expect(testPlace.timeYear).to.equal("Spring");
+    expect(testPlace.notes).to.equal("");
   });
 });
